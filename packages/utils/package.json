@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@gofindme/utils",
+  "main": "dist/index.js",
+  "description": "Shared utils",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "typescript": "^5.0.4"
+  }
+}
