@@ -13,7 +13,9 @@ module.exports = {
     es6: true,
     node: true,
   },
+  plugins: ['prettier'],
   extends: [
+    'prettier',
     './rules/import.js',
     './rules/typescript.js',
     './rules/jest.js',

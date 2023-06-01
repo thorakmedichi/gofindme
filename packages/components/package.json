@@ -10,12 +10,13 @@
     "lint:fix": "eslint --fix src/**/*.{ts,tsx,js}"
   },
   "keywords": [],
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
     "@sketchpad/eslint-config": "*",
+    "@sketchpad/prettier-config": "*",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.38.0",

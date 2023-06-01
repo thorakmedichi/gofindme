@@ -8,8 +8,6 @@
     "outDir": "./dist",
     "strictNullChecks": true
   },
-  "include": [
-    "./"
-  ],
+  "include": ["./"],
   "exclude": ["./dist", "node_modules", "**/*.spec.ts"]
 }

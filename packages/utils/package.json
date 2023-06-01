@@ -5,7 +5,7 @@
   "description": "Shared utils",
   "author": "Ryan Stephens <diving.bc@gmail.com>",
   "keywords": [],
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint src/**/*.{ts,tsx,js}",
@@ -14,6 +14,7 @@
   "dependencies": {},
   "devDependencies": {
     "@sketchpad/eslint-config": "*",
+    "@sketchpad/prettier-config": "*",
     "eslint": "^8.38.0",
     "typescript": "^5.0.4"
   }
