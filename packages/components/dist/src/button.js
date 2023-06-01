@@ -14,7 +14,7 @@ var __assign =
       };
     return __assign.apply(this, arguments);
   };
-Object.defineProperty(exports, '__esModule', {value: true});
+Object.defineProperty(exports, '__esModule', { value: true });
 exports.Button = void 0;
 var jsx_runtime_1 = require('react/jsx-runtime');
 function Button(_a) {
@@ -22,7 +22,7 @@ function Button(_a) {
     onClick = _a.onClick;
   return (0, jsx_runtime_1.jsx)(
     'button',
-    __assign({type: 'button', onClick: onClick}, {children: title}),
+    __assign({ type: 'button', onClick: onClick }, { children: title }),
   );
 }
 exports.Button = Button;

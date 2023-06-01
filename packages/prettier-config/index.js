@@ -1,6 +1,7 @@
 module.exports = {
-  arrowParens: 'avoid',
-  bracketSpacing: false,
+  arrowParens: 'always',
+  bracketSpacing: true,
+  bracketSameLine: false,
   embeddedLanguageFormatting: 'auto',
   endOfLine: 'lf',
   htmlWhitespaceSensitivity: 'css',
@@ -12,6 +13,7 @@ module.exports = {
   quoteProps: 'as-needed',
   requirePragma: false,
   semi: true,
+  singleAttributePerLine: false,
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',

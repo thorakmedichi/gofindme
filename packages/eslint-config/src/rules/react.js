@@ -47,7 +47,7 @@ module.exports = {
     'react/jsx-handler-names': 'off',
     'react/jsx-key': 'error',
     'react/jsx-max-depth': 'off',
-    'react/jsx-max-props-per-line': [1, { maximum: 2 }],
+    'react/jsx-max-props-per-line': [1, { maximum: { single: 2, multi: 1 } }],
     'react/jsx-newline': 'off',
     'react/jsx-no-bind': 'off',
     'react/jsx-no-comment-textnodes': 'error',
