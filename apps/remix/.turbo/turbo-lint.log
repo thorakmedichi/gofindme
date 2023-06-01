@@ -1,0 +1,12 @@
+
+> remix@ lint /home/thorakmedichi/work/personal/gofindme/apps/remix
+> eslint app/**/*.{ts,tsx,js}
+
+
+/home/thorakmedichi/work/personal/gofindme/apps/remix/app/routes/_index.tsx
+  5:44  error  Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`  arrow-body-style
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+ ELIFECYCLE  Command failed with exit code 1.

@@ -6,6 +6,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
+    "lint": "eslint app/**/*.{ts,tsx,js}",
+    "lint:fix": "eslint --fix app/**/*.{ts,tsx,js}",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@remix-run/dev": "^1.16.1",
     "@remix-run/eslint-config": "^1.16.1",
+    "@sketchpad/eslint-config": "*",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.38.0",
@@ -29,5 +32,6 @@
   },
   "engines": {
     "node": ">=14"
-  }
+  },
+  "packageManager": "pnpm@8.6.0"
 }

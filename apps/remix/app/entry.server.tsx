@@ -6,8 +6,7 @@
 
 import { PassThrough } from "node:stream";
 
-import type { EntryContext } from "@remix-run/node";
-import { Response } from "@remix-run/node";
+import  { type EntryContext, Response } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import isbot from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
@@ -64,12 +63,12 @@ function handleBotRequest(
 
           pipe(body);
         },
-        onShellError(error: unknown) {
-          reject(error);
-        },
         onError(error: unknown) {
           responseStatusCode = 500;
           console.error(error);
+        },
+        onShellError(error: unknown) {
+          reject(error);
         },
       }
     );
@@ -92,6 +91,13 @@ function handleBrowserRequest(
         abortDelay={ABORT_DELAY}
       />,
       {
+        onError(error: unknown) {
+          console.error(error);
+          responseStatusCode = 500;
+        },
+        onShellError(error: unknown) {
+          reject(error);
+        },
         onShellReady() {
           const body = new PassThrough();
 
@@ -105,14 +111,7 @@ function handleBrowserRequest(
           );
 
           pipe(body);
-        },
-        onShellError(error: unknown) {
-          reject(error);
-        },
-        onError(error: unknown) {
-          console.error(error);
-          responseStatusCode = 500;
-        },
+        }
       }
     );
 

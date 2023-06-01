@@ -3,14 +3,17 @@
   "name": "@gofindme/utils",
   "main": "dist/index.js",
   "description": "Shared utils",
-  "scripts": {
-    "build": "rm -rf dist && tsc"
-  },
+  "author": "Ryan Stephens <diving.bc@gmail.com>",
   "keywords": [],
-  "author": "",
   "license": "ISC",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "lint": "eslint src/**/*.{ts,tsx,js}",
+    "lint:fix": "eslint --fix src/**/*.{ts,tsx,js}"
+  },
   "dependencies": {},
   "devDependencies": {
+    "@sketchpad/eslint-config": "*",
     "eslint": "^8.38.0",
     "typescript": "^5.0.4"
   }

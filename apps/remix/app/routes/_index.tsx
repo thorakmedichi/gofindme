@@ -1,29 +1,23 @@
-import { testing } from '@gofindme/utils';
-import type { V2_MetaFunction } from "@remix-run/node";
 import { Button } from '@gofindme/components';
+import { testing } from '@gofindme/utils';
+import  { type V2_MetaFunction } from "@remix-run/node";
 
-export const meta: V2_MetaFunction = () => {
-  return [
+export const meta: V2_MetaFunction = () => [
     { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { content: "Welcome to Remix!", name: "description" },
   ];
-};
 
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
 
       { testing() }
-      <Button title="Testing" onClick={() => console.log('test')} />
+      <Button title="Testing" onClick={() => console.log ('test')} />
 
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
+          <a target="_blank" href="https://remix.run/tutorials/blog" rel="noreferrer">
             15m Quickstart Blog Tutorial
           </a>
         </li>

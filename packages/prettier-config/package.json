@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "@gofindme/prettier-config",
+  "main": "./index.js",
+  "description": "Recommended prettier setup for all projects",
+  "author": "Ryan Stephens <diving.bc@gmail.com>",
+  "keywords": [],
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
