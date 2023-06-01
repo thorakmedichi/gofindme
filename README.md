@@ -39,7 +39,7 @@ ie `pnpm add --filter @gofindme/components react`
 # Notes
 
 - Yarn does not work with Remix. Chose PNPM over NPM as it is safer and uses less HD space for modules.
-
+- The project is setup to be used with either Lerna or Turborepo
 
 # Questions
 

@@ -1,15 +1,15 @@
 import { Button } from '@gofindme/components';
 import { testing } from '@gofindme/utils';
-import  { type V2_MetaFunction } from "@remix-run/node";
+import  { type V2_MetaFunction } from '@remix-run/node';
 
 export const meta: V2_MetaFunction = () => [
-    { title: "New Remix App" },
-    { content: "Welcome to Remix!", name: "description" },
+    { title: 'New Remix App' },
+    { content: 'Welcome to Remix!', name: 'description' },
   ];
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
 
       { testing() }
       <Button title="Testing" onClick={() => console.log ('test')} />

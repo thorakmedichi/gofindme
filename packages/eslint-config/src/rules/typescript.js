@@ -126,6 +126,16 @@ module.exports = {
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
 
+        'quotes': ['error', 'single', { 'allowTemplateLiterals': true }],
+        '@typescript-eslint/quotes': [
+          'error',
+          'single',
+          {
+            'avoidEscape': true,
+            'allowTemplateLiterals': true
+          }
+        ],
+
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/await-thenable': 'error',

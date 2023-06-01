@@ -25,10 +25,10 @@ module.exports = {
   },
   rules: {
     'react/boolean-prop-naming': 'off',
-    'react/button-has-type': 'off',
+    'react/button-has-type': 'error',
     'react/default-props-match-prop-types': hasPropTypes ? 'error' : 'off',
     'react/destructuring-assignment': 'off',
-    'react/display-name': ['error', {ignoreTranspilerName: false}],
+    'react/display-name': ['error', { ignoreTranspilerName: false }],
     'react/forbid-component-props': 'off',
     'react/forbid-dom-props': 'off',
     'react/forbid-elements': 'off',
@@ -47,7 +47,7 @@ module.exports = {
     'react/jsx-handler-names': 'off',
     'react/jsx-key': 'error',
     'react/jsx-max-depth': 'off',
-    'react/jsx-max-props-per-line': [1, { maximum: 1 }],
+    'react/jsx-max-props-per-line': [1, { maximum: 2 }],
     'react/jsx-newline': 'off',
     'react/jsx-no-bind': 'off',
     'react/jsx-no-comment-textnodes': 'error',
@@ -67,9 +67,9 @@ module.exports = {
     'react/jsx-uses-vars': 'error',
     'react/no-access-state-in-setstate': 'error',
     'react/no-adjacent-inline-elements': 'off',
-    'react/no-array-index-key': 'off', // sometimes you don't care about the issues or they don't apply
+    'react/no-array-index-key': 'warn', // sometimes you don't care about the issues or they don't apply
     'react/no-arrow-function-lifecycle': 'error',
-    'react/no-children-prop': 'off',
+    'react/no-children-prop': 'warn',
     'react/no-danger': 'off',
     'react/no-danger-with-children': 'error',
     'react/no-deprecated': 'error',
@@ -105,7 +105,7 @@ module.exports = {
     'react/require-default-props': 'off', // sometimes the default value is undefined so that's fine...
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
-    'react/self-closing-comp': 'error',
+    'react/self-closing-comp': ['error', { 'component': true, 'html': true }],
     'react/sort-comp': 'off',
     'react/sort-default-props': 'off',
     'react/sort-prop-types': 'off',
