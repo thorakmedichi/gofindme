@@ -6,8 +6,10 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "lint": "eslint app/**/*.{ts,tsx,js}",
+    "lint": "prettier --write && eslint app/**/*.{ts,tsx,js}",
     "lint:fix": "eslint --fix app/**/*.{ts,tsx,js}",
+    "prettier": "npx prettier --write .",
+    "test": "jest",
     "tsc": "tsc"
   },
   "dependencies": {

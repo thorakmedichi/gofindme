@@ -7,7 +7,9 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint src/**/*.{ts,tsx,js}",
-    "lint:fix": "eslint --fix src/**/*.{ts,tsx,js}"
+    "lint:fix": "eslint --fix src/**/*.{ts,tsx,js}",
+    "prettier": "npx prettier --write .",
+    "test": "jest"
   },
   "keywords": [],
   "license": "MIT",
