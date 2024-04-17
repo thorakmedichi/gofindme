@@ -11,7 +11,14 @@ export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
       {testing()}
-      <Button title="Testing" onClick={() => console.log('test')} />
+      <br />
+      <Button
+        title="Testing"
+        onClick={() => {
+          // eslint-disable-next-line no-console
+          console.log('test');
+        }}
+      />
 
       <h1>Welcome to Remix</h1>
       <ul>

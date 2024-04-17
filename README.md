@@ -17,15 +17,27 @@ Install [Lerna](https://lerna.js.org/docs/getting-started)
 `npm install --g lerna`
 
 
-# Adding libraries to the packages or apps
+# Install all required node modules packages
 
-ie `pnpm add --filter @gofindme/components react`
+`pnpm install`
+
+# Adding libraries to the packages or apps
+[Filter argument](https://pnpm.io/filtering)
+
+`pnpm add --filter @gofindme/components react`
 
 
 # Lerna commands
+
 [Commands](https://lerna.js.org/docs/api-reference/commands)
 
+#### Add new lerna package
+Though you can use lerna directory to manipulate the workspaces it is recommended to use the `pnpm` commands instead
 `lerna add <package>[@version] [--dev] [--exact] [--peer]`
+
+#### Remove the `node_modules` directory from all packages:
+`lerna clean` 
+
 
 # Resources
 

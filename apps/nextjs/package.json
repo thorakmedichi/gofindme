@@ -3,15 +3,17 @@
   "name": "nextjs",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "npx prettier --write . && next lint",
     "lint:fix": "next lint --fix",
     "prettier": "npx prettier --write .",
     "test": "jest"
   },
   "dependencies": {
+    "@gofindme/components": "*",
+    "@gofindme/utils": "*",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",

@@ -1,3 +1,9 @@
+'use client';
+// @TODO The addition of use client here is just to test importing aliased components.
+// @TODO This should be re-assessed and potentially removed
+
+import { Button } from '@gofindme/components';
+import { testing } from '@gofindme/utils';
 import Image from 'next/image';
 import styles from './page.module.css';
 
@@ -8,6 +14,11 @@ export default function Home() {
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
+        </p>
+        <p>
+          {testing()}
+          <br />
+          <Button title="Testing" onClick={() => console.log('test')} />
         </p>
         <div>
           <a

@@ -1,6 +1,16 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "remix-build": "cd /apps/remix remix build",
+    "remix-dev": "cd ./apps/remix remix dev",
+    "remix-start": "remix-serve build",
+    "remix-lint": "eslint apps/**/*.{ts,tsx,js}",
+    "remix-lint:fix": "eslint --fix app/**/*.{ts,tsx,js}",
+    "remix-prettier": "npx prettier --write .",
+    "remix-test": "jest",
+    "remix-tsc": "tsc"
+  },
   "dependencies": {
     "@types/jest": "^29.5.2",
     "@types/node": "^20.2.5",

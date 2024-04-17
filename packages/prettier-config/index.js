@@ -7,6 +7,7 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   insertPragma: false,
   // jsxBracketSameLine: false,  // deprecated
+  // experimentalTernaries: false,
   jsxSingleQuote: false,
   printWidth: 80,
   proseWrap: 'always',
@@ -17,5 +18,5 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
-  useTabs: false,
+  useTabs: false
 }

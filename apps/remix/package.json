@@ -4,9 +4,9 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
-    "dev": "remix dev",
+    "dev": "remix dev -p 3300",
     "start": "remix-serve build",
-    "lint": "prettier --write && eslint app/**/*.{ts,tsx,js}",
+    "lint": "npx prettier --write . && eslint app/**/*.{ts,tsx,js}",
     "lint:fix": "eslint --fix app/**/*.{ts,tsx,js}",
     "prettier": "npx prettier --write .",
     "test": "jest",

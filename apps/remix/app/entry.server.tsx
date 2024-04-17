@@ -65,7 +65,7 @@ function handleBotRequest(
         },
         onError(error: unknown) {
           responseStatusCode = 500;
-          console.error(error);
+          console.error(error); // eslint-disable-line no-console
         },
         onShellError(error: unknown) {
           reject(error);
@@ -92,7 +92,7 @@ function handleBrowserRequest(
       />,
       {
         onError(error: unknown) {
-          console.error(error);
+          console.error(error); // eslint-disable-line no-console
           responseStatusCode = 500;
         },
         onShellError(error: unknown) {
