@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "@sketchpad/test-utils",
+  "main": "./src/index.ts",
+  "version": "0.0.0",
+  "author": "Ryan Stephens <diving.bc@gmail.com>",
+  "description": "A set of testing utilities that can be used in projects",
+  "keywords": [],
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "@sketchpad/eslint-config": "*",
+    "@sketchpad/prettier-config": "*",
+    "@testing-library/dom": "^8.20.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^15.0.2",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "eslint": "^8.38.0",
+    "typescript": "^5.0.4"
+  }
+}
