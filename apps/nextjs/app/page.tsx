@@ -3,7 +3,7 @@
 // @TODO This should be re-assessed and potentially removed
 
 import { Button } from '@gofindme/components';
-import { testing } from '@gofindme/utils';
+import { testFunction } from '@gofindme/utils';
 import Image from 'next/image';
 import styles from './page.module.css';
 
@@ -16,7 +16,7 @@ export default function Home() {
           <code className={styles.code}>app/page.tsx</code>
         </p>
         <p>
-          {testing()}
+          {testFunction()}
           <br />
           <Button title="Testing" onClick={() => console.log('test')} />
         </p>

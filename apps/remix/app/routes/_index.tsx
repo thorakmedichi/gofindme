@@ -1,5 +1,5 @@
 import { Button } from '@gofindme/components';
-import { testing } from '@gofindme/utils';
+import { testFunction } from '@gofindme/utils';
 import { type V2_MetaFunction } from '@remix-run/node';
 
 export const meta: V2_MetaFunction = () => [
@@ -10,7 +10,7 @@ export const meta: V2_MetaFunction = () => [
 export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
-      {testing()}
+      {testFunction()}
       <br />
       <Button
         title="Testing"

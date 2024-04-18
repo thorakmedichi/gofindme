@@ -26,6 +26,7 @@ Install [Lerna](https://lerna.js.org/docs/getting-started)
 
 `pnpm add --filter @gofindme/components react`
 
+you can use the `-D` argument to add the package to the devDependencies.
 
 # Lerna commands
 

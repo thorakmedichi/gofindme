@@ -2,8 +2,9 @@
   "private": true,
   "name": "@gofindme/utils",
   "main": "dist/index.js",
-  "description": "Shared utils",
+  "version": "0.0.0",
   "author": "Ryan Stephens <diving.bc@gmail.com>",
+  "description": "Shared utils",
   "keywords": [],
   "license": "MIT",
   "scripts": {
@@ -13,11 +14,13 @@
     "prettier": "npx prettier --write .",
     "test": "jest"
   },
-  "dependencies": {},
   "devDependencies": {
     "@sketchpad/eslint-config": "*",
     "@sketchpad/prettier-config": "*",
+    "@types/jest": "^29.5.2",
     "eslint": "^8.38.0",
+    "jest": "^29.6.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
   }
 }
