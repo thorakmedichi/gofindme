@@ -15,8 +15,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@sketchpad/eslint-config": "*",
-    "@sketchpad/prettier-config": "*",
+    "@sketchpad/eslint-config": "workspace:*",
+    "@sketchpad/prettier-config": "workspace:*",
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.5.7",
     "@types/jest": "^29.5.2",
     "eslint": "^8.38.0",
     "jest": "^29.6.0",

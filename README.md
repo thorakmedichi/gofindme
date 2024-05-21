@@ -11,7 +11,12 @@ Install [PNPM](https://pnpm.io/installation)
 
 `npm install -g pnpm`
 
+If you have installed the latest v16.x or greater node version in your system, then enable the pnpm using the below cmd
 
+`corepack enable`
+
+
+NOTE: Remove Lerna in favor of NX
 Install [Lerna](https://lerna.js.org/docs/getting-started)
 
 `npm install --g lerna`
@@ -56,5 +61,5 @@ Though you can use lerna directory to manipulate the workspaces it is recommende
  
 # Questions
 
-- Should I use rollup instead of just tsc?
+- Should I use rollup instead of just tsc? or swc?
 - 

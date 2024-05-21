@@ -11,8 +11,8 @@
     "build": "rm -rf dist && tsc"
   },
   "devDependencies": {
-    "@sketchpad/eslint-config": "*",
-    "@sketchpad/prettier-config": "*",
+    "@sketchpad/eslint-config": "workspace:*",
+    "@sketchpad/prettier-config": "workspace:*",
     "@testing-library/dom": "^8.20.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^15.0.2",

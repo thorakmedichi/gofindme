@@ -23,6 +23,7 @@ module.exports = {
     './rules/jsx-a11y.js',
     './rules/base.js',
   ],
+  parser: '@typescript-eslint/parser',
   rules: {},
   overrides: [],
 }

@@ -2,7 +2,7 @@
 // @TODO The addition of use client here is just to test importing aliased components.
 // @TODO This should be re-assessed and potentially removed
 
-import { Button } from '@gofindme/components';
+import { Button } from '@gofindme/ui';
 import { testFunction } from '@gofindme/utils';
 import Image from 'next/image';
 import styles from './page.module.css';

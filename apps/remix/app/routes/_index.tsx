@@ -1,6 +1,6 @@
-import { Button } from '@gofindme/components';
 import { testFunction } from '@gofindme/utils';
 import { type V2_MetaFunction } from '@remix-run/node';
+import { Button } from '@ui/Button';
 
 export const meta: V2_MetaFunction = () => [
   { title: 'New Remix App' },
@@ -13,7 +13,8 @@ export default function Index() {
       {testFunction()}
       <br />
       <Button
-        title="Testing"
+        label="Testing"
+        size="large"
         onClick={() => {
           // eslint-disable-next-line no-console
           console.log('test');

@@ -1,11 +1,12 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": "./",
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "@ui/*": ["../../packages/ui/src/stories/*"]
     }
   },
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"]
